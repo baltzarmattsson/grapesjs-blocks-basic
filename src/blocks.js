@@ -16,23 +16,12 @@ export default function(editor, opt = {}) {
       align-items: stretch;
       flex-wrap: nowrap;
       padding: 10px;
-    }
-    @media (max-width: 768px) {
-      .${clsRow} {
-        flex-wrap: wrap;
-      }
     }`
     : `
     .${clsRow} {
       display: table;
       padding: 10px;
       width: 100%;
-    }
-    @media (max-width: 768px) {
-      .${stylePrefix}cell, .${stylePrefix}cell30, .${stylePrefix}cell70 {
-        width: 100%;
-        display: block;
-      }
     }`;
   const styleClm = flexGrid
     ? `
